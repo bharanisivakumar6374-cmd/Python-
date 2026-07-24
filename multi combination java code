@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class reverse{
+   public static void main (String[] abc) {
+       Scanner ab = new Scanner(System.in);
+        System.out.println("enter the number:");
+       int s = ab.nextInt();
+       int r = 0, count = 0;
+       if(s%2==0){
+           System.out.println("this is the even number:"+s);
+        }else {
+             System.out.println("this is the odd number:"+s);
+         }
+       if(s<0){
+           s=s*(-1);
+           System.out.println("this postive :"+s);
+       }
+       for(int i=1; i<=10;i++){
+          r=i*s;
+          System.out.println(i+"*"+s+"="+r);
+       }
+       while(s>0){
+           s=s/10;
+            count=count+1;
+         s--;
+       }
+       System.out.println("this the count of s:"+count);
+    }
+}

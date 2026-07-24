@@ -1,0 +1,21 @@
+import java.util.Scanner;
+    public class Count {
+      public static void main (String[] abc) {
+       Scanner ab = new Scanner(System.in);
+       int n = ab.nextInt();
+       int r=0, odd=0, even=0;
+       while(n!=0){
+        r=(n%10);
+           if(r%2==0){
+              even++;
+           }else{
+            odd++;   
+           }
+          n=n/10;    
+       }
+       System.out.println("the even number count:"+even);
+       System.out.println("the even number count:"+odd);
+       
+   }
+    
+}

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Sumprimedight{
+    public static void main (String[] args) {
+        Scanner ag = new Scanner(System.in);
+        int n = ag.nextInt();
+        int count=0;
+        for(int i=2;i<=n;i++){
+            int j=2;
+            int s=0;
+            while(j<i){
+                if(i%j==0){
+                    s=1;
+                    break;
+                }  
+                j++;
+                }
+                if(s==0){
+                    count++;
+                } 
+            }
+            System.out.println(count);
+            
+            
+        
+    }
+}

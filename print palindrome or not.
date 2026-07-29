@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Array6{
+	public static void main(String[] args) {
+	Scanner hp = new Scanner(System.in);
+	int n=hp.nextInt();
+    int temp=n,y=0,r=0;
+    while(n>0){
+        y=n%10;
+        r=r*10+y;
+        n=n/10;
+    }
+    
+    if(r==temp){
+        System.out.println("it palindrome");
+	
+	}else{
+	    System.out.println("not palindrome");
+	}
+}}

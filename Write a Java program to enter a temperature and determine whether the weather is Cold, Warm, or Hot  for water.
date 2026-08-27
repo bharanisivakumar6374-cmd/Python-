@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class TemperatureCheck {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter temperature in Celsius: ");
+        double temp = sc.nextDouble();
+
+        if (temp < 20) {
+            System.out.println("Weather is Cold");
+        } 
+        else if (temp >= 20 && temp < 30) {
+            System.out.println("Weather is Warm");
+        } 
+        else {
+            System.out.println("Weather is Hot");
+        }
+
+        sc.close();
+    }
+}

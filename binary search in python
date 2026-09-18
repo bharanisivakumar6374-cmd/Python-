@@ -1,0 +1,23 @@
+n=int(input())
+arr=[]
+for i in range(n):
+ arr.append(int(input()))
+ print(arr)
+ 
+arr.sort()
+print(arr)
+s=0
+e=len(arr)-1
+t=int(input())
+
+while(s<=e):
+ mid=s+(e-s)//2
+ if(t==arr[mid]):
+  print(mid)
+  break
+ elif(t>arr[mid]):
+    s=mid+1
+ elif(t<arr[mid]):
+     e=mid-1
+ else:
+    print("-1")

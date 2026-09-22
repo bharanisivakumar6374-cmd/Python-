@@ -1,0 +1,3 @@
+with open("data.txt", "a") as file:
+    file.write("name: bala\n")
+    file.write("age: 20\n")

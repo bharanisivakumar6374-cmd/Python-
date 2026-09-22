@@ -1,0 +1,4 @@
+with open("data.txt", "w") as file:
+    file.write("apple\n")
+    file.write("orange\n")
+    file.write("mango\n")

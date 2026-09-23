@@ -1,0 +1,12 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("sales.csv")
+
+plt.bar(df["Product"], df["Sales"])
+
+plt.xlabel("Product")
+plt.ylabel("Sales")
+plt.title("Sales Analysis")
+
+plt.show()
